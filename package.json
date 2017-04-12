@@ -1,19 +1,25 @@
 {
   "name": "generator-miniapp-gulp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "generator for wechat-minapp with gulp & redux",
   "homepage": "",
   "author": {
     "name": "夏浩",
     "email": "xiachenghao@douyu.tv",
-    "url": ""
+    "url": "https://github.com/SherHoooo"
   },
   "files": [
     "generators"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SherHoooo/generator-miniapp-gulp.git"
+  },
   "main": "generators/index.js",
   "keywords": [
-    "",
+    "wechat-miniapp",
+    "miniapp",
+    "gulp",
     "yeoman-generator"
   ],
   "devDependencies": {

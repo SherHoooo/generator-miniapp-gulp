@@ -1,5 +1,15 @@
-# generator-sherhootest [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> sherhooo-test
+# generator-miniapp-gulp
+> A simple generator for building wechat-miniapp with gulp
+
+# About
+Generator-miniapp-gulp will help you build new Wechat-miniapp projects using gulp.
+
+Out of the box it comes with support for:
+- Gulp
+- ES2015 via Babel-Loader
+- Different supported style languages (sass, scss, less, stylus)
+- Automatic code linting via esLint
+- Automatic compli
 
 ## Installation
 
@@ -7,13 +17,14 @@ First, install [Yeoman](http://yeoman.io) and generator-sherhootest using [npm](
 
 ```bash
 npm install -g yo
-npm install -g generator-sherhootest
+npm install -g generator-miniapp-gulp
 ```
 
 Then generate your new project:
 
 ```bash
-yo sherhootest
+
+yo miniapp-gulp
 ```
 
 ## Getting To Know Yeoman
@@ -28,9 +39,3 @@ yo sherhootest
 MIT © [夏浩]()
 
 
-[npm-image]: https://badge.fury.io/js/generator-sherhootest.svg
-[npm-url]: https://npmjs.org/package/generator-sherhootest
-[travis-image]: https://travis-ci.org//generator-sherhootest.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-sherhootest
-[daviddm-image]: https://david-dm.org//generator-sherhootest.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-sherhootest
