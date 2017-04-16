@@ -9,7 +9,7 @@ Out of the box it comes with support for:
 - ES2015 via Babel-Loader
 - Different supported style languages (sass, scss, less, stylus)
 - Automatic code linting via esLint
-- Automatic compli
+- Automatic complie
 
 ## Installation
 
@@ -20,19 +20,21 @@ npm install -g yo
 npm install -g generator-miniapp-gulp
 ```
 
-Then generate your new project:
+Then generate your new Wechat-miniapp project:
 
 ```bash
 
 yo miniapp-gulp
 ```
+## Code & Build
 
-## Getting To Know Yeoman
+```bash
+# when your souce file changes, it will automatically compile to be wxml & wxss
+gulp watch
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+# complie your souce file
+gulp build
+```
 
 ## License
 
