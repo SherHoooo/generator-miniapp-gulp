@@ -81,10 +81,9 @@ class AppGenerator extends Generators {
   }
 
   install () {
-    // this.installDependencies({
-      // skipMessage: this.options['skip-install-message'],
-      // skipInstall: this.options['skip-install']
-    // });
+    this.installDependencies({
+      npm: true      
+    });
   }
 
   end () {
