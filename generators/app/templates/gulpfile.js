@@ -15,7 +15,7 @@ const config = require('./config')
 const isProduction = () => config.env === 'production'
 // utils functions
 function generateFile (options) {
-  let styleType = config.styleType
+  const styleType = config.styleType
   const files = generatePage({
     root: path.resolve(__dirname, './src/pages/'),
     name: options.pageName,
@@ -95,7 +95,7 @@ gulp.task('compile:xml', () => {
   * 编译style样式文件
   */
 gulp.task('compile:style', () => {
-  let style = config.styleType
+  const style = config.styleType
   if (style === 'css') return gulp.src(['src/**/*.css']).pipe(gulp.dest('dist'))
   return gulp.src([`src/**/*.${style}`])
     .pipe(plugins.sourcemaps.init())

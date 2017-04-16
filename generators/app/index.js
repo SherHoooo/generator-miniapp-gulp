@@ -59,7 +59,10 @@ class AppGenerator extends Generators {
       destinationPath: '.gitignore'
     }, {
       templatePath: '_package.json',
-      destinationPath: 'package.json'
+      destinationPath: 'package.json',
+      param: {
+        styleType: this.config.styleType
+      }
     }, {
       templatePath: 'app.css',
       destinationPath: `src/app.${this.config.styleType}`
@@ -82,7 +85,8 @@ class AppGenerator extends Generators {
 
   install () {
     this.installDependencies({
-      npm: true      
+      npm: true,
+      bower: false
     });
   }
 
