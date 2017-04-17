@@ -96,10 +96,12 @@ gulp.task('compile:xml', () => {
   */
 gulp.task('compile:style', () => {
   const style = config.styleType
+  plugins.sass = plugins.sass || () => false
+  plugins.less = plugins.less || () => false
   if (style === 'css') return gulp.src(['src/**/*.css']).pipe(gulp.dest('dist'))
   return gulp.src([`src/**/*.${style}`])
     .pipe(plugins.sourcemaps.init())
-    .pipe(plugins.if(style = 'scss', plugins.sass({outputStyle: 'compressed'}), plugins.less()))
+    .pipe(plugins.if(style === 'scss', plugins.sass({outputStyle: 'compressed'}), plugins.less()))
     .pipe(plugins.if(isProduction, plugins.cssnano({ compatibility: '*' })))
     .pipe(plugins.rename({ extname: '.wxss' }))
     .pipe(plugins.sourcemaps.write('.'))
